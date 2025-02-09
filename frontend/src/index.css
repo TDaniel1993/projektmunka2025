@@ -18,9 +18,22 @@ a.active hr {
     font-style: normal;
 }
 
-::-webkit-scrollbar{
+/* ::-webkit-scrollbar{
     display: none;
-}
+} */
+
+/* Ez nem kell mert csak a képnél akarjuk eltüntetni a scrollbart és ehhez a tailwindnek egy külön csomagja
+lett telepítve ami a npm install tailwind-scrollbar-hide
+És ennek a csomagját importálni kellett a tailwind.config.js-ben ami a plugin részben kell 
+
+És a scrollbar-hide be lett írva a product.jsx-ben a product images résznél a 36.-sorban 
+<div className='flex sm:flex-col overflow-x-auto sm:overflow-y-scroll justify-between sm:justify-normal sm:w-[18.7%] w-full scrollbar-hide'>
+
+Így néz ki -> 
+plugins: [
+    require('tailwind-scrollbar-hide'),
+  ], */
+
 
 @media (max-width:640px) {
     a.active {
